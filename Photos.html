@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="C:\Users\archi\source\repos\Website\indexStyle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golfer Gang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <script src=main.js></script>
+  <div class="container">
+    <header class="header">
+      <h1>Golfer Gang</h1>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a class="active" href=Photos.html>Photos</a></li>
+        <li><a href=Contact.html>Contact</a></li>
+        <li><a href=About.html>About</a></li>
+      </ul>
+      <br><br>
+      <p>“Mistakes are part of the game. It’s how well you recover from them, that’s the mark of a great player.”<br>- Alice Cooper</p>
+    </aside>
+
+<main class="content">
+    <h2>Photos</h2>
+    <hr><br>
+    <table>
+
+<div class="row">
+  <div class="column">
+    <img src="golf1.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+  <div class="column">
+    <img src="golf2.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+  <div class="column">
+    <img src="golf3.jpg" alt="Golf" style="width:100%" onclick="ImageClick(this);">
+  </div>
+</div>
+
+<div class="imagecontainer">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<br>
+    </main>
+  </div>
+</body>
+
+</html>
